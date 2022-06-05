@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Para funcionar corretamente é necessário estar rodando a API: https://github.com/aosopoken/API_SnakeGame
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
