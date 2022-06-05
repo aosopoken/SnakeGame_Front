@@ -1,0 +1,94 @@
+.menu-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.campoGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 8px;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(68, 68, 185);
+    cursor: pointer;
+    height: 40px;
+}
+
+.button i {
+    color: aliceblue;
+}
+
+.overlay {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 25px;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    font-size: 35px;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 60px;
+}
+
+.sobrebtn {
+    color: grey;
+    z-index: 9;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    font-size: 30px;
+    opacity: 0%;
+}
+
+#cobra {
+    background-color: rgb(255, 182, 233);
+    width: 90vmin;
+    height: 90vmin;
+    margin-top: 5vmin;
+    display: grid;
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(30, 1fr);
+}
+
+.snake {
+    background-color: rgb(159, 238, 254);
+    border: solid black;
+}
+
+.food {
+    background-color: purple;
+    border: solid black;
+}
