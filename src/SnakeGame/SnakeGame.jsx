@@ -1,10 +1,10 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection, snakeTamanho } from '../SnakeGame/snake/snake.js'
 import { update as updateFood, draw as drawFood } from '../SnakeGame/food/food.js'
 import { outsideGrid } from '../SnakeGame/grid/grid'
-import { RouteComponentProps, withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import React,{useState} from 'react';
 import './style.css'
-import { useHistory, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import LoseModal from '../loseModal/loseModal.jsx';
 
 const SnakeGame = (props) => {
