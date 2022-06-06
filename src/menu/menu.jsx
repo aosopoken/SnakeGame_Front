@@ -32,38 +32,40 @@ const Menu = () =>{
         })
 
     return(
-    <div className='menu'>
-        <div className='menu__titulo'>
-            MENU
-        </div>
-        <div className='menu__conteudo'>
-            <div className='menu__score'>
-                <table className="TabelaProdutos">
-                    <thead>
-                        <tr>
-                            <th>
-                                Nome
-                            </th>
-                            <th>
-                                Score
-                            </th>
-                        </tr>
-                        {usersArray}
-                    </thead>
-                </table>
-            </div>
-            <div className='menu__conteudo__input'>
-                <div className='menu__input'>
-                    <p>Coloque seu nome</p> 
-                    <input onChange={(event) => {setName(event.target.value)}} />
+        <div className='container'>
+            <div className='menu'>
+                <div className='menu__titulo'>
+                    MENU
                 </div>
-                <button onClick={clickButton} className='menu__iniciar' href='/snakeGame'>
-                    Iniciar
-                </button>
+                <div className='menu__conteudo'>
+                    <div className='menu__score'>
+                        <table className="TabelaProdutos">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Nome
+                                    </th>
+                                    <th>
+                                        Score
+                                    </th>
+                                </tr>
+                                {usersArray}
+                            </thead>
+                        </table>
+                    </div>
+                    <div className='menu__conteudo__input'>
+                        <div className='menu__input'>
+                            <p>Coloque seu nome</p> 
+                            <input onChange={(event) => {setName(event.target.value)}} />
+                        </div>
+                        <button onClick={clickButton} className='menu__iniciar' href='/snakeGame'>
+                            Iniciar
+                        </button>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        
-    </div>
     )
 }
 

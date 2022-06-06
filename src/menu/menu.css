@@ -1,17 +1,25 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu {
     width: 600px;
-    position: fixed;
+    height: 500px;
     background-color: rgb(186, 200, 255);
-    height: 70%;
-    align-self: center;
-    left: 0;
-    transform: translate(72%, 23%);
     box-shadow: 0px 0px 15px 5px #000000;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     z-index: 0;
 }
+
 
 @media (max-width: 1100px) {
     .menu {
