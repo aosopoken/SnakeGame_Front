@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import api from '../service/api';
 import './loseModal.css'
@@ -8,7 +7,7 @@ const LoseModal = (props) => {
     const history = useHistory();
     
     const voltarMenu = () => {
-        api.post('/person',{name: nome,score}).then((res) => console.log(res.status))
+        api.post('/person',{name: nome,score})
         history.push('/');
         window.location.reload();
     }
@@ -24,7 +23,7 @@ const LoseModal = (props) => {
                         VOCÊ PERDEU
                     </div>
                     <div className='modal__score'>
-                      SCORE:  {props.score}
+                      SCORE:  {score}
                     </div>
                     <button className='modal__button' onClick={voltarMenu}>
                         MENU
