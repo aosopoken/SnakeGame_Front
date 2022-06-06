@@ -1,9 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import './menu.css'
 import api from '../service/api';
-import { RouteComponentProps, withRouter } from 'react-router-dom';
-import SnakeGame from '../SnakeGame/SnakeGame';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Menu = () =>{
